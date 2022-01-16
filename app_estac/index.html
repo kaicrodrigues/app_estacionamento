@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Sistema de Estacionamento</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Corpo -->
+
+    <div class="container">
+        <div class="header clearfix">
+            <h2>Sistema de Estacionamento</h2>
+            <div class="jumbotron">
+                <form>
+                    <div class="form-group">
+                        <label>Modelo do Veículo:</label>
+                        <input type="text" id="name" class="form-control" autocomplete="off" placeholder="Exemplo: Gol G3" required>
+                    </div>
+
+                    <!-- Formulário -->
+
+                    <div class="form-group">
+                        <label>Placa do Veículo:</label>
+                        <input type="text" id="licence" class="form-control" autocomplete="off" placeholder="Exemplo: ABC-123" required>
+                    </div>
+                    <button id="send" type="submit" class="btn btn-primary">Adicionar</button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tabelas -->
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Veículo</th>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="garage"></tbody>
+    </table>
+
+    <!-- Js -->
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <div class="footer">
+        <hr>
+        <!-- https://github.com/kaicrodrigues -->
+
+        <p>Copyright © 2022 Kaic Leonardo - Todos os direitos reservados</p>
+
+    </div>
+</body>
+
+</html>
